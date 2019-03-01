@@ -31,5 +31,5 @@ def testdb(request):
     for var in list:
         response1 += str(var.open) + " "
         response = response1
-    #return HttpResponse("<p>" + response + "</p>")
+    #return HttpResponse("<p>" + response + "</p>")1111
     return response

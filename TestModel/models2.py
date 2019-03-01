@@ -18,7 +18,7 @@ class Historicalquote(models.Model):
     symbol = models.ForeignKey('Stocks', models.DO_NOTHING, db_column='Symbol', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        managed = False
+        managed =  False
         db_table = 'HistoricalQuote'
 
 
