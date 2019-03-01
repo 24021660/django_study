@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import *
-from . import view,testdb
+from . import view
 
 urlpatterns = [
-    url(r'^hello$', testdb.testdb),
+    url(r'^hello$', view.hello),
 ]
