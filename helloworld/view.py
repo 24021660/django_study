@@ -1,4 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def hello(request):
-    return HttpResponse('hello world')
+    context ={}
+    context['hello']='helloworld!!!'
+    return render(request,'helloworld.html',context)
