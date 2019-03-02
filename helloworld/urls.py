@@ -17,7 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import *
 from . import view
+from . import search,login
 
 urlpatterns = [
     url(r'^hello$', view.hello),
+    url(r'^search_form$',search.search_form),
+    url(r'^search$',search.search),
+    url(r'^post$',search.post_form),
+    url(r'^admin/',admin.site.urls),
+    url(r'^login/',login.login),
 ]
